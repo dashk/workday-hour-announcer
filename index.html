@@ -7,6 +7,17 @@
   </head>
   <body>
     hello world
+    <script>
+      /**
+       * Plays given text in speaker
+       *
+       * @param {string} text
+       * @returns {void}
+       **/
+      function speak(text) {
+        window.speechSynthesis.speak(new SpeechSynthesisUtterance(text));
+      }
+    </script>
   </body>
 </html>
   
