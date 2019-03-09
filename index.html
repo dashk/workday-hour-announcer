@@ -5,7 +5,7 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body>
-    hello world
+    <button id="start-button">Start</button>
     <script>
       /**
        * Plays given text in speaker
@@ -14,12 +14,13 @@
        * @returns {void}
        **/
       function speak(text) {
-        window.speechSynthesis.speak(new SpeechSynthesisUtterance(text));
+        const statement = new SpeechSynthesisUtterance(text)
+        window.speechSynthesis.speak(statement);
       }
       
-      window.onload = function() {
-        speak('hello world');
-      };
+      document.getElementById('start-button').on('click', function() {
+        speak('Hello world');
+      });
     </script>
   </body>
 </html>
