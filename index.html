@@ -18,7 +18,7 @@
         window.speechSynthesis.speak(statement);
       }
       
-      document.getElementById('start-button').on('click', function() {
+      document.getElementById('start-button').addEventListener('click', function() {
         speak('Hello world');
       });
     </script>
