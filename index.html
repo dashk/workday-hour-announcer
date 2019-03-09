@@ -5,7 +5,14 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body>
-    <button id="start-button">Start</button>
+    <form>
+      <h1>Scheduler</h1>
+      <div>
+        <label for="interval">Interval (In minutes): </label>
+        <input id="interval" value="30" />
+      </div>
+      <button id="start-button">Start</button>
+    </form>
     <script>
       /**
        * Plays given text in speaker
